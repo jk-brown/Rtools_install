@@ -3,9 +3,9 @@
     "path": "C:/Users/brow521/R_projects/Local_projects/Rtools_install/Rtools_install.Rmd",
     "project_path": "Rtools_install.Rmd",
     "type": "r_markdown",
-    "hash": "2710456114",
+    "hash": "1964489690",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1688755804790.0,
     "source_on_save": false,
     "relative_order": 1,
@@ -27,7 +27,7 @@
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1694188612806,
+    "last_content_update": 1694189374482,
     "read_only": false,
     "read_only_alternatives": []
 }

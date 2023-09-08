@@ -43,3 +43,7 @@ We can do this using `Sys.which()` in RStudio:
 Sys.which("make")
 ```
 When the code above returns the path of your Rtools `make.exe`, you know that you have completed a successful installation and can proceed with compiling R packages from source.
+
+
+
+
