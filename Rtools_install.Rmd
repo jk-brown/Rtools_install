@@ -1,0 +1,49 @@
+---
+title: "Installing Rtools and Hector for Windows"
+author: "Joe Brown"
+date: "2023-07-07"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# What is Rtools
+
+Rtools is a toolchain that allows for users to build R packages from source code. Many R users may never need to interact with Rtools, however some tools are written in C++ or another programming language and thus need to be compiled into a format that can be executed in R. This is where Rtools comes in handy. With Rtools, R users can easily install and use R packages that require compilation from source.
+
+Rtools is primarily used in the Windows environment. This vignette will briefly walk through the steps of installing Rtools on your Windows machine. We will conclude this vignette with a Hector installation to test that Rtools is working properly.
+
+[See the video linked here for additional help!](https://www.youtube.com/watch?v=Pg3WY8wg1cY&t=457s)
+
+# Downloading and installing Rtools
+
+[HERE](https://cran.r-project.org/bin/windows/Rtools/) you can find links to downloads for different versions of Rtools. It is important that you download and install the RTools version that is compatible with whatever version of R you are working with.
+
+## Installing Rtools
+
+1.  Navigate to the folder where the Rtools installer was downloaded (mine is in downloads).
+
+2.  Click the installer to run. Ensure that you note your destination location. It may be best to keep the default suggestion.
+
+3.  When you see "Additional Tasks" window, make sure both boxes are checked. Click the next button to continue.
+
+4.  When you see that "Ready to Install" window, click "Install" to begin the installation.
+
+5.  Click "Finish" when installation is complete.
+
+# Checking Installation
+
+Before proceeding with building an R package from source, we want to check that the installation was successful. 
+
+We can do this using `Sys.which()` in RStudio:
+
+```{r}
+Sys.which("make")
+```
+When the code above returns the path of your Rtools `make.exe`, you know that you have completed a successful installation and can proceed with compiling R packages from source.
+
+
+
+
