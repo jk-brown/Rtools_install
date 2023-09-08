@@ -1,2 +1,2 @@
 # Rtools_install
- insstalling Rtools on Windows
+ Installing Rtools on Windows
